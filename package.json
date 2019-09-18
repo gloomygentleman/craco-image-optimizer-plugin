@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "main": "index.js",
   "description": "add image optimizer to create-react-app",
-  "repository": "https://github.com/GloomyGentleman/craco-image-optimizer-plugin.git",
+  "repository": "https://github.com/kkulbae/craco-image-optimizer-plugin.git",
   "bugs": {
-    "url": "https://github.com/GloomyGentleman/craco-image-optimizer-plugin/issues",
+    "url": "https://github.com/kkulbae/craco-image-optimizer-plugin/issues",
     "email": "gloomygentleman@gmail.com"
   },
   "author": "WonbaeLee <gloomygentleman@gmail.com>",

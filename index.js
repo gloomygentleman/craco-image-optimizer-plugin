@@ -1,7 +1,7 @@
 const { getLoader, loaderByName } = require('@craco/craco');
 
 module.exports = {
-  overrideWebpackConfig: ({ webpackConfig, cracoConfig, pluginOptions, context: { env } }) => {
+  overrideWebpackConfig: ({ webpackConfig, cracoConfig, pluginOptions }) => {
     const config = { ...webpackConfig };
 
     const urlLoader = getLoader(config, loaderByName('url-loader'));
