@@ -1,6 +1,6 @@
 {
   "name": "craco-image-optimizer-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "description": "add image optimizer to create-react-app",
   "repository": "https://github.com/kkulbae/craco-image-optimizer-plugin.git",
@@ -18,6 +18,9 @@
     "image-webpack-loader"
   ],
   "dependencies": {
-    "image-webpack-loader": "^4.6.0"
+    "image-webpack-loader": "^6.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2"
   }
 }
