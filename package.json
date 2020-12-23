@@ -18,9 +18,9 @@
     "image-webpack-loader"
   ],
   "dependencies": {
-    "image-webpack-loader": "^6.0.0"
+    "image-webpack-loader": "^7.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "prettier": "^2.2.1"
   }
 }
