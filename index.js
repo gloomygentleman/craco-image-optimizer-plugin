@@ -4,7 +4,7 @@ module.exports = {
   overrideWebpackConfig: ({ webpackConfig, cracoConfig, pluginOptions }) => {
     const config = { ...webpackConfig };
 
-    const urlLoader = getLoader(config, loaderByName('url-loader'));
+    const urlLoader = getLoader(config, imageUrlLoaderMatcher());
     const loader = urlLoader.match.loader;
 
     loader.use = [
@@ -26,4 +26,14 @@ module.exports = {
 
     return config;
   },
+};
+
+function imageUrlLoaderMatcher() {
+  const urlLoaderMatcher = loaderByName("url-loader");
+  const matcher = rule => urlLoaderMatcher(rule) &&
+    rule.test &&
+    (Array.isArray(rule.test)
+      ? rule.test.some(r => r.toString().indexOf("jpe?g") >= 0)
+      : rule.test.toString().indexOf("jpe?g") >= 0);
+  return matcher;
 };
