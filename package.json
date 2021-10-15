@@ -1,6 +1,6 @@
 {
   "name": "craco-image-optimizer-plugin",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "index.js",
   "description": "add image optimizer to create-react-app",
   "repository": "https://github.com/kkulbae/craco-image-optimizer-plugin.git",
